@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="shortcut icon" href="../images/restaurant-interior1.avif" type="images/Rest logo.png">
+    <link rel="stylesheet" href="../styles/about.css">
+    <script>
+        var i = 0 //starting point
+        var images = []
+        var time = 2000
+
+        //image lists
+        images[0]= '../images/image1 hotel.avif';
+        images[1] = '../images/restaurant-interior1.aviF';
+        images[2] = '../images/restaurant staff.jpg';
+        images[3] = '../images/freshly-baked-pizza-rustic-wooden-table-generated-by-ai_24640-80691.avif';
+        images[4] = '../images/drink2.avif';
+        // creating a function to change the image
+    function changeimg(){
+    //we can get this because we put the name slide in the attribute of image
+        document.slide.src = images[i];
+        if(i<images.length - 1){
+            i++;
+
+        } else{
+            i= 0;
+        }
+        setTimeout("changeimg()", time)
+    }
+    window.onload = changeimg
+    </script>
+</head>
+<body>
+    <div class="parentdiv">
+        <div class="title">
+            <h1 class="about">About Us</h1>
+        </div>
+        <div class="content">
+            <div class="article">
+                <h2> Protea online shipping</h2>
+                <p> Protea Restaurant Protea Hotel kisaasi is a luxury hotel owned and operated by Marriott International, a global hospitality company with a portfolio of over six thousand properties in 122 countries and territories.
+                    </p>
+                    <a href="">Read more</a>
+            </div>
+            <div class="image-section">
+                <img name="slide" src="../images/image1 hotel.avif" alt="">
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+    
+    <a href="../Home.html" id="link-home">Back to home</a>
+    
+</body>
+</html>
